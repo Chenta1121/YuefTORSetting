@@ -69,10 +69,9 @@ namespace YuefTORSetting
         [SettingPropertyGroup("自定义资源设置", GroupOrder = 1)]
         public int Yuef_CustomResource_UpgradeCostReduction { get; set; } = 30;
 
-        [SettingProperty("自定义资源值兵种维持减免(%)", -100, 100, RequireRestart = false, HintText = "设置维持时的资源消耗减免百分比(负数增加消耗)", Order = 15)]
+        [SettingProperty("自定义资源值兵种维持消耗减免(%)", -100, 100, RequireRestart = false, HintText = "设置维持时的资源消耗减免百分比(负数增加消耗)", Order = 15)]
         [SettingPropertyGroup("自定义资源设置", GroupOrder = 1)]
         public int Yuef_CustomResource_KeepCostReduction { get; set; } = 30;
-
 
 
         // 每个强盗派系初始的藏身处数量
@@ -108,22 +107,36 @@ namespace YuefTORSetting
         public float Yuef_MinWarDays { get; set; } = 20;
 
 
-        [SettingProperty("火枪300技能穿盾", RequireRestart = false, HintText = "启用后会修复原版TOR中火枪300熟练度时队伍士兵枪械无法穿盾的BUG", Order = 41)]
+        [SettingProperty("火枪BUG修复", RequireRestart = false, HintText = "启用后会修复原版TOR中火枪300熟练度时队伍士兵枪械无法穿盾的BUG;修复法师无限索敌的BUG", Order = 41)]
         [SettingPropertyGroup("TOR原版BUG修复", GroupOrder = 4)]
         public bool Yuef_BUGFix_PiercingShots { get; set; } = true;
-
-
+        [SettingProperty("AI施法索敌BUG修复", RequireRestart = false, HintText = "启用后会移除法师AI无限索敌,并增加索敌距离限制", Order = 42)]
+        [SettingPropertyGroup("TOR原版BUG修复", GroupOrder = 4)]
+        public bool Yuef_BUGFix_AICast { get; set; } = true;
+        [SettingProperty("AI最大施法距离限制",0,500,RequireRestart = false, HintText = "在启用AI施法索敌BUG修复启用时生效", Order = 43)]
+        [SettingPropertyGroup("TOR原版BUG修复", GroupOrder = 4)]
+        public float Yuef_BUGFix_CastDistance{ get; set; } = 100f;
 
 
 
         [SettingProperty("诅咒之地机制调整", RequireRestart = false, HintText = "启用后会替换原版TOR的扣血受伤机制,更改为在诅咒之地范围内减速", Order = 51)]
-        [SettingPropertyGroup("TOR原版机制调整", GroupOrder = 5)]
+        [SettingPropertyGroup("TOR机制调整", GroupOrder = 5)]
         public bool Yuef_CursedSite_adjustment { get; set; } = false;
 
-        [SettingProperty("战后俘虏机制调整", RequireRestart = false, HintText = "启用后会恢复拯救俘虏的机制", Order = 52)]
-        [SettingPropertyGroup("TOR原版机制调整", GroupOrder = 5)]
+        [SettingProperty("AI树人招募调整", RequireRestart = false, HintText = "启用后会强化木精文化的招募机制,当AI位于木精森林时将有更高的概率获得树人的援助", Order = 52)]
+        [SettingPropertyGroup("TOR机制调整", GroupOrder = 5)]
+        public bool Yuef_Treeman_adjustment { get; set; } = true;
+
+        [SettingProperty("城堡机制调整", RequireRestart = false, HintText = "启用后对城堡添加机制: 当队伍与附近的城堡所属为敌对时会受到移速惩罚,反之则会获得移速奖励", Order = 53)]
+        [SettingPropertyGroup("TOR机制调整", GroupOrder = 5)]
+        public bool Yuef_Castle_adjustment { get; set; } = true;
+
+        [SettingProperty("战后俘虏机制调整", RequireRestart = false, HintText = "启用后会恢复拯救俘虏的机制", Order = 54)]
+        [SettingPropertyGroup("TOR机制调整", GroupOrder = 5)]
         public bool Yuef_BattleReward_adjustment { get; set; } = false;
 
-
+        [SettingProperty("AI战斗行为逻辑调整", RequireRestart = false, HintText = "(测试项目当前版本暂未实装)启用后会调整TOR原版的AI部队战斗行为逻辑", Order = 60)]
+        [SettingPropertyGroup("TOR_AI调整", GroupOrder = 6)]
+        public bool Yuef_AIBehavior_adjustment { get; set; } = false;
     }
 }
