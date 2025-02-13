@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<base xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" type="string">
+	<tags>
+		<tag language="简体中文"/>
+	</tags>
+	<strings>
+		<string id="YueF_TORSetting_Name" text="中古战锤:设置"/>
+
+		<string id="Yuef_Group_CareerPoints" text="职业技能点数调整"/>
+		<string id="Yuef_MaxCareerPoints" text="最大职业技能点数"/>
+		<string id="Yuef_Hint_MaxCareerPoints" text="设置最大职业技能点数(35即可点满所有技能)"/>
+
+		
+		
+		<string id="Yuef_Group_CustomResource" text="自定义资源"/>
+		<string id="Yuef_MaxCustomResource" text="最大自定义资源值"/>
+		<string id="Yuef_Hint_MaxCustomResource" text="设置最大自定义资源值上限"/>
+		<string id="Yuef_CustomResourceDailyMult" text="自定义资源值每日获取倍率(%)"/>
+		<string id="Yuef_Hint_CustomResourceDailyMult" text="设置自定义资源值的每日获取的百分比倍率(当每日结算值为正时生效)"/>
+		<string id="Yuef_CustomResourceDailyCostRed" text="自定义资源值每日消耗减免(%)"/>
+		<string id="Yuef_Hint_CustomResourceDailyCostRed" text="设置自定义资源值的日常消耗的百分比倍率(当每日结算值为负时生效)"/>
+		<string id="Yuef_CustomResourceUpgradeRed" text="自定义资源值兵种升阶消耗减免(%)"/>
+		<string id="Yuef_Hint_CustomResourceUpgradeRed" text="设置升阶的资源消耗减免百分比(负数增加消耗)"/>
+		<string id="Yuef_CustomResourceKeepRed" text="自定义资源值兵种维持消耗减免(%)"/>
+		<string id="Yuef_Hint_CustomResourceKeepRed" text="设置维持时的资源消耗减免百分比(负数增加消耗)"/>
+		
+		
+		<string id="Yuef_Group_WOM" text="魔法之风"/>
+		<string id="Yuef_WOMMaxAdd" text="魔法之风上限加成"/>
+		<string id="Yuef_Hint_WOMMaxAdd" text="设置魔法之风的上限额外加成(固定值)"/>
+		<string id="Yuef_WOMRechargeSpeed" text="魔法之风回复速率加成(固定值)"/>
+		<string id="Yuef_Hint_WOMRechargeSpeed" text="设置魔法之风的恢复速率额外增量(负数减慢)"/>
+		<string id="Yuef_RemoveArmorPenalty" text="取消装备重量惩罚"/>
+		<string id="Yuef_Hint_RemoveArmorPenalty" text="选中时,魔法之风的恢复速率将不再受到装备重量影响(含NPC队友)"/>
+		
+		
+		<string id="Yuef_Group_BanditFaction" text="野怪"/>
+		<string id="Yuef_BanditFactionInitialHideouts" text="每个强盗派系初始的藏身处数量"/>
+		<string id="Yuef_Hint_BanditFactionInitialHideouts" text="设置每个强盗派系初始的藏身处数量"/>
+		<string id="Yuef_BanditFactionMaxHideouts" text="每个强盗派系最大藏身处数量"/>
+		<string id="Yuef_Hint_BanditFactionMaxHideouts" text="设置每个强盗派系最大藏身处数量"/>
+		<string id="Yuef_MaxBanditPartiesAroundHideout" text="每个藏身处周围最大强盗队伍数量"/>
+		<string id="Yuef_Hint_MaxBanditPartiesAroundHideout" text="设置每个藏身处周围最大强盗队伍数量"/>
+		<string id="Yuef_MaxBanditPartiesInHideout" text="每个藏身处内最大强盗队伍数量"/>
+		<string id="Yuef_Hint_MaxBanditPartiesInHideout" text="设置每个藏身处内最大强盗队伍数量"/>
+		
+		
+		<string id="Yuef_Group_AIWarConfig" text="AI战争配置"/>
+		<string id="Yuef_MinPeaceDays" text="最短和平天数"/>
+		<string id="Yuef_Hint_MinPeaceDays" text="设置最短和平天数"/>
+		<string id="Yuef_MinWarDays" text="最短战争天数"/>
+		<string id="Yuef_Hint_MinWarDays" text="设置最短战争天数"/>
+		
+		
+		<string id="Yuef_Group_TORBugFix" text="BUG修复"/>
+		<string id="Yuef_BUGFix_AICast" text="AI施法索敌BUG修复"/>
+		<string id="Yuef_Hint_BUGFix_AICast" text="启用后会移除法师AI无限索敌,并增加索敌距离限制"/>
+		<string id="Yuef_BUGFix_CastDistance" text="AI最大施法距离限制"/>
+		<string id="Yuef_Hint_BUGFix_CastDistance" text="在启用AI施法索敌BUG修复启用时生效"/>
+		
+		<string id="Yuef_Description_1" text="消耗减免"/>
+		<string id="Yuef_Description_2" text="获取倍率"/>
+	</strings>
+</base>
+
